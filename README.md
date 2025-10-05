@@ -35,7 +35,11 @@ Este projeto fornece uma interface amigável para gerenciar rotas WireGuard em M
 2. Configure a chave SSH motivo de usar essa chave mikrotik não aceita ed25519:
    ```bash
    ssh-keygen -t rsa -b 2048 -f ~/.ssh/mikrotik_wgkey -N ""
+   ```
+   
+   ### como essa criptografia e mais fraca provavel vai ter que colocar isso abaixo no seu /etc/ssh/ssh_conf
 
+   ```bash
    Host 10.130.130.0
     HostName 10.130.130.0
     User admin
@@ -46,12 +50,12 @@ Este projeto fornece uma interface amigável para gerenciar rotas WireGuard em M
     KexAlgorithms +diffie-hellman-group1-sha1
     Ciphers +aes128-cbc
     StrictHostKeyChecking no
-
-
+   ```
+   ```bash
    chmod +x ROTA-ACC-WG.py
    ### Ou para a versão shell
    chmod +x controle-wg.sh
-
+   ```
 4. Execute o script:
    ```bash
    ./ROTA-ACC-WG.py
