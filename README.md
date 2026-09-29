@@ -17,7 +17,7 @@
 <details>
 <summary>🧭 Sumário — clique para expandir</summary>
 
-[📋 Descrição](#-descrição) · [✨ Funcionalidades](#-funcionalidades) · [🚀 Instalação](#-instalação) · [🤝 Créditos](#creditos) · [📄 Licença](#licenca)
+[📋 Descrição](#-descrição) · [✨ Funcionalidades](#-funcionalidades) · [🚀 Instalação](#-instalação) · [🤝 Créditos](#creditos) · [📄 Licença](#licenca) · [🖼️ Telas e menus](#telas)
 
 </details>
 
@@ -35,6 +35,47 @@ Este projeto fornece uma interface amigável para gerenciar rotas WireGuard em M
 - 🔌 Teste de conectividade SSH
 - ⚡ Configuração direta via comandos SSH
 - 💾 Configuração persistente de ISPs
+
+<!-- telas:inicio -->
+<a name="telas"></a>
+
+## 🖼️ Telas e menus
+
+Capturas reais da interface de terminal dos dois scripts (`ROTA-ACC-WG.sh` e `ROTA-ACC-WG.py`, mesmo menu). **Ambiente de demonstração:** para não tocar em nenhum roteador, as capturas foram feitas com um `ssh` simulado que responde como o MikroTik; a interface, os textos e o fluxo são os dos scripts. Os endereços do menu são os valores de exemplo do próprio script (ISP-01 a ISP-64).
+
+<div align="center">
+<img src="doc/imagens/sh-menu.png" alt="Menu principal (bash)" width="100%">
+<br><sub><b>Menu principal (bash)</b> — cabeçalho com IP, usuário e porta do MikroTik, ISP atual e a lista numerada de ISPs, em duas colunas.</sub>
+</div>
+
+### Menus
+
+| Menu | Para que serve |
+|---|---|
+| **1 a 64 (número do ISP)** | aplica o ISP escolhido: remove as rotas com comentário `ROTA ACC WG RFC` e cria as quatro rotas RFC 1918/CGNAT com o gateway dele. |
+| **98 — Gerenciar nomes de ISP** | abre o submenu: 1 Renomear ISP, 2 Adicionar novo ISP (nome e gateway), 3 Remover ISP (com confirmação), 4 Voltar. |
+| **99 — Próximo ISP automático** | passa para o ISP seguinte na ordem dos gateways. |
+| **00 — Ver ISP atual (detalhado)** | mostra as rotas WG encontradas no MikroTik e qual gateway está ativo. |
+| **88 — Testar conexão SSH** | testa a conexão com a chave `~/.ssh/mikrotik_wgkey` e o acesso às rotas. |
+| **77 — Sair** | encerra o script. |
+
+### Galeria
+
+<table>
+<tr>
+<td width="50%"><img src="doc/imagens/sh-trocar-isp.png" alt="Escolher um ISP"><br><b>Escolher um ISP</b><br><sub>digitar o número remove as rotas antigas e recria as 4 rotas (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16 e 100.64.0.0/10) apontando para o gateway do ISP.</sub></td>
+<td width="50%"><img src="doc/imagens/sh-teste-ssh.png" alt="88 — Testar conexão SSH"><br><b>88 — Testar conexão SSH</b><br><sub>confere a conexão e o acesso às rotas antes de mexer em qualquer coisa.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="doc/imagens/sh-isp-atual.png" alt="00 — Ver ISP atual"><br><b>00 — Ver ISP atual</b><br><sub>lista as rotas WG que existem no MikroTik e o gateway em uso.</sub></td>
+<td width="50%"><img src="doc/imagens/sh-gerenciar.png" alt="98 — Gerenciar nomes de ISP"><br><b>98 — Gerenciar nomes de ISP</b><br><sub>lista o nome e o gateway de cada ISP; permite renomear, adicionar e remover.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="doc/imagens/py-trocar-isp.png" alt="Versão Python"><br><b>Versão Python</b><br><sub>a mesma interface em `ROTA-ACC-WG.py` (aqui, escolhendo o ISP-05).</sub></td>
+</tr>
+</table>
+
+<!-- telas:fim -->
 
 ## 🚀 Instalação
 
