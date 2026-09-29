@@ -198,23 +198,18 @@ Vibe code AI
 
 ## 🤝 Créditos
 
-Os campos marcados são para o Carlos completar (nomes, links e contribuições).
+Quem participou do projeto e como. As pessoas e as IAs vêm do arquivo [`creditos.env`](creditos.env): edite lá e rode
+`python3 -B scripts/readme_padrao.py creditos .` (do repositório `assistentes-ia`) para atualizar esta seção.
 
+<!-- creditos:inicio -->
 ### Pessoas
 
-| Quem | Papel | Perfil / link |
+| Quem | Tipo de ajuda | Perfil / link |
 |---|---|---|
-| **Carlos** ([@CarlosSuporteISP](https://github.com/CarlosSuporteISP)) | Idealização, direção e uso | [github.com/CarlosSuporteISP](https://github.com/CarlosSuporteISP) |
-| **Josué** | <!-- CARLOS: contribuição --> | <!-- CARLOS: link --> |
-| <!-- CARLOS: nome --> | <!-- CARLOS: papel --> | <!-- CARLOS: link --> |
-
-### Inteligências artificiais
-
-| Quem | Contribuição | Link |
-|---|---|---|
-| **Claude** (Claude Code) — [Anthropic](https://www.anthropic.com) | README e documentação no padrão do Carlos | [claude.com/claude-code](https://claude.com/claude-code) |
-| **ChatGPT / Codex** — [OpenAI](https://openai.com) | <!-- CARLOS: contribuição, se participou --> | [github.com/openai/codex](https://github.com/openai/codex) |
-| <!-- CARLOS: outra IA --> | <!-- CARLOS: contribuição --> | <!-- CARLOS: link --> |
+| **Carlos** | Idealização, direção e uso | [github.com/CarlosSuporteISP](https://github.com/CarlosSuporteISP) |
+| <!-- CARLOS: nome --> | <!-- CARLOS: tipo de ajuda --> | <!-- CARLOS: link do GitHub --> |
+| <!-- CARLOS: nova pessoa: acrescente PESSOA_n_* em creditos.env --> | | |
+<!-- creditos:fim -->
 
 ### Projetos de terceiros
 
