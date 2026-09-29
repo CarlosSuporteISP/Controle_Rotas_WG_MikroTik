@@ -1,6 +1,25 @@
-
+<!-- readme-padrao:v1 — ver doc/padrao-readme.md em assistentes-ia -->
+<div align="center">
 
 # 🌐 Controle WG - MikroTik
+
+**Script para controlar rotas WireGuard em MikroTik por SSH, alternando entre ISPs e gateways.**
+
+![Python](https://img.shields.io/badge/Python-3776ab?logo=python&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4eaa25?logo=gnubash&logoColor=white)
+![MikroTik](https://img.shields.io/badge/MikroTik-293239?logo=mikrotik&logoColor=white)
+![WireGuard](https://img.shields.io/badge/WireGuard-88171a?logo=wireguard&logoColor=white)
+
+</div>
+
+---
+
+<details>
+<summary>🧭 Sumário — clique para expandir</summary>
+
+[📋 Descrição](#-descrição) · [✨ Funcionalidades](#-funcionalidades) · [🚀 Instalação](#-instalação) · [🤝 Créditos](#creditos) · [📄 Licença](#licenca)
+
+</details>
 
 Script para controle e gerenciamento de rotas WireGuard em dispositivos MikroTik via SSH.
 
@@ -172,3 +191,40 @@ Carlos Santos - https://github.com/CarlosSuporteISP
 Vibe code AI 
 
 ⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
+
+---
+
+<a name="creditos"></a>
+
+## 🤝 Créditos
+
+Os campos marcados são para o Carlos completar (nomes, links e contribuições).
+
+### Pessoas
+
+| Quem | Papel | Perfil / link |
+|---|---|---|
+| **Carlos** ([@CarlosSuporteISP](https://github.com/CarlosSuporteISP)) | Idealização, direção e uso | [github.com/CarlosSuporteISP](https://github.com/CarlosSuporteISP) |
+| **Josué** | <!-- CARLOS: contribuição --> | <!-- CARLOS: link --> |
+| <!-- CARLOS: nome --> | <!-- CARLOS: papel --> | <!-- CARLOS: link --> |
+
+### Inteligências artificiais
+
+| Quem | Contribuição | Link |
+|---|---|---|
+| **Claude** (Claude Code) — [Anthropic](https://www.anthropic.com) | README e documentação no padrão do Carlos | [claude.com/claude-code](https://claude.com/claude-code) |
+| **ChatGPT / Codex** — [OpenAI](https://openai.com) | <!-- CARLOS: contribuição, se participou --> | [github.com/openai/codex](https://github.com/openai/codex) |
+| <!-- CARLOS: outra IA --> | <!-- CARLOS: contribuição --> | <!-- CARLOS: link --> |
+
+### Projetos de terceiros
+
+| Projeto | Uso aqui | Licença / origem |
+|---|---|---|
+| <!-- CARLOS: projeto --> | <!-- CARLOS: uso --> | <!-- CARLOS: licença --> |
+
+<a name="licenca"></a>
+
+## 📄 Licença
+
+<!-- CARLOS: escolha a licença do repositório. Sem arquivo LICENSE, vale "todos os direitos reservados". -->
+Este repositório **ainda não tem arquivo de licença definido**. Os projetos de terceiros citados mantêm as licenças originais.
